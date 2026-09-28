@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Ashwin Kumar N — Full Stack Developer (React.js · Node.js · MongoDB)</title>
+  <meta name="description" content="Ashwin Kumar N is a Full Stack MERN Developer who builds scalable, responsive web applications with React.js, Node.js, Express and MongoDB — bringing a finance background's precision to engineering." />
+  <meta name="keywords" content="Ashwin Kumar N, Full Stack Developer, MERN Stack, React.js Developer, Node.js, MongoDB, Express.js, Portfolio, Chennai, India" />
+  <meta name="author" content="Ashwin Kumar N" />
+  <meta name="theme-color" content="#0B0B0F" />
+  <!-- TODO: replace with the deployed URL -->
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ashwin Kumar N — Full Stack Developer" />
+  <meta property="og:description" content="Turning complex requirements into elegant, scalable web experiences." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ashwin Kumar N — Full Stack Developer" />
+  <meta name="twitter:description" content="Turning complex requirements into elegant, scalable web experiences." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ashwin Kumar N",
+    "jobTitle": "Full Stack Developer",
+    "email": "mailto:ashofficial338@gmail.com",
+    "telephone": "+91 9360780159",
+    "knowsAbout": ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "REST APIs", "Financial Reporting"],
+    "alumniOf": "KSG College of Arts and Science"
+  }
+  </script>
+
+  <!-- Set theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('akn-theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <!-- ===== Fonts & icons ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== SVG ICON SPRITE ===================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-arrow-ur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-devices" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8M10 19v-4M7 19h5"/><rect x="16" y="12" width="6" height="10" rx="2"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+      <symbol id="i-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-brief" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M16 14v4M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-move" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l-3 3 3 3M9 5l3-3 3 3M15 19l-3 3-3-3M19 9l3 3-3 3M2 12h20M12 2v20"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.1 7.9L22 12l-7.9 2.1L12 22l-2.1-7.9L2 12l7.9-2.1z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ===================== GLOBAL LAYERS ===================== -->
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__mono">AKN</span>
+      <div class="preloader__bar"><span></span></div>
+      <span class="preloader__count">0</span>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="orbs" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+
+  <!-- Custom cursor (desktop only; enabled in JS) -->
+  <div class="cursor is-hidden" aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo" aria-label="Ashwin Kumar N — home">
+        <span class="nav__logo-mark">AK</span>
+        <span class="nav__logo-text">Ashwin<span class="grad">.</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <span class="nav__pill" aria-hidden="true"></span>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Work</a>
+        <a href="#experience" class="nav__link">Journey</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+          <svg class="theme-toggle__sun"><use href="#i-sun"/></svg>
+          <svg class="theme-toggle__moon"><use href="#i-moon"/></svg>
+        </button>
+        <a href="#contact" class="btn btn--sm btn--primary nav__cta" data-magnetic>Hire Me</a>
+        <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Work</a>
+      <a href="#experience">Journey</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="mailto:ashofficial338@gmail.com">ashofficial338@gmail.com</a>
+      <a href="tel:+919360780159">+91 93607 80159</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__status" data-hero-fade>
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Available for freelance &amp; full-time roles
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__hello" data-hero-fade>Hi, I'm</span>
+            <span class="hero__name split" data-split>Ashwin</span>
+            <span class="hero__name hero__name--outline split" data-split>Kumar N</span>
+          </h1>
+
+          <p class="hero__role" data-hero-fade>
+            <span class="hero__role-prefix">&gt;</span>
+            <span class="sr-only">Full Stack Developer, React.js Specialist, MERN Stack Engineer, Finance-to-Tech Problem Solver</span><span class="typewriter" aria-hidden="true">Full Stack Developer</span><span class="typewriter__caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero__stack" data-hero-fade>React.js <i>•</i> Node.js <i>•</i> Express.js <i>•</i> MongoDB</p>
+
+          <p class="hero__tagline" data-hero-fade>
+            Turning complex requirements into <em>elegant</em>, <em>scalable</em> web experiences.
+          </p>
+
+          <div class="hero__ctas" data-hero-fade>
+            <a href="#projects" class="btn btn--primary btn--lg" data-magnetic>
+              <span>View My Work</span>
+              <svg class="icon"><use href="#i-arrow-down"/></svg>
+            </a>
+            <!-- TODO: replace # with the resume PDF path, e.g. assets/Ashwin-Kumar-N-Resume.pdf -->
+            <a href="#" class="btn btn--ghost btn--lg" data-magnetic download>
+              <svg class="icon"><use href="#i-download"/></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <ul class="socials hero__socials" data-hero-fade aria-label="Social links">
+            <!-- TODO: replace # with real profile URLs -->
+            <li><a href="#" class="social" aria-label="LinkedIn" data-magnetic><svg><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://github.com/ashofficial338-jpg" target="_blank" rel="noopener" class="social" aria-label="GitHub" data-magnetic><svg><use href="#i-github"/></svg></a></li>
+            <li><a href="mailto:ashofficial338@gmail.com" class="social" aria-label="Email Ashwin" data-magnetic><svg><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+
+        <!-- Floating code card -->
+        <div class="hero__visual" data-hero-visual aria-hidden="true">
+          <div class="code-card glass" data-tilt>
+            <div class="code-card__bar">
+              <span></span><span></span><span></span>
+              <em>ashwin.config.js</em>
+            </div>
+<pre class="code-card__body"><code><span class="tk-k">const</span> <span class="tk-v">ashwin</span> = {
+  <span class="tk-p">role</span>: <span class="tk-s">'Full Stack Developer'</span>,
+  <span class="tk-p">stack</span>: [<span class="tk-s">'React'</span>, <span class="tk-s">'Node'</span>, <span class="tk-s">'Express'</span>, <span class="tk-s">'MongoDB'</span>],
+  <span class="tk-p">background</span>: <span class="tk-s">'Finance &amp; Accounting'</span>,
+  <span class="tk-p">superpower</span>: <span class="tk-s">'precision'</span>,
+  <span class="tk-p">uptime</span>: <span class="tk-n">99.9</span>,
+  <span class="tk-f">ship</span>() {
+    <span class="tk-k">return</span> <span class="tk-s">'elegant, scalable apps'</span>;
+  }
+};</code></pre>
+          </div>
+          <div class="float-badge float-badge--1 glass"><i class="devicon-react-original colored"></i> React.js</div>
+          <div class="float-badge float-badge--2 glass"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+          <div class="float-badge float-badge--3 glass"><i class="devicon-mongodb-plain colored"></i> MongoDB</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span class="scroll-cue__mouse"><span></span></span>
+        <span class="scroll-cue__text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>React.js</span><svg><use href="#i-spark"/></svg>
+        <span>Node.js</span><svg><use href="#i-spark"/></svg>
+        <span>Express.js</span><svg><use href="#i-spark"/></svg>
+        <span>MongoDB</span><svg><use href="#i-spark"/></svg>
+        <span>REST APIs</span><svg><use href="#i-spark"/></svg>
+        <span>JavaScript</span><svg><use href="#i-spark"/></svg>
+        <span>Finance → Code</span><svg><use href="#i-spark"/></svg>
+        <!-- duplicated for a seamless loop -->
+        <span>React.js</span><svg><use href="#i-spark"/></svg>
+        <span>Node.js</span><svg><use href="#i-spark"/></svg>
+        <span>Express.js</span><svg><use href="#i-spark"/></svg>
+        <span>MongoDB</span><svg><use href="#i-spark"/></svg>
+        <span>REST APIs</span><svg><use href="#i-spark"/></svg>
+        <span>JavaScript</span><svg><use href="#i-spark"/></svg>
+        <span>Finance → Code</span><svg><use href="#i-spark"/></svg>
+      </div>
+    </div>
+    </div>
+
+    <!-- ===================== 2. ABOUT ===================== -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow" data-reveal>01 — About</span>
+          <h2 class="section-title" id="about-title" data-reveal>
+            Precision of finance.<br /><span class="grad">Craft of code.</span>
+          </h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p class="lead" data-reveal>
+              Innovative and results-driven <strong>Full Stack Developer</strong> with expertise in designing,
+              developing, and deploying scalable web applications using modern technologies.
+            </p>
+            <p data-reveal>
+              I bring a strong MERN-stack background together with hands-on experience in financial systems and
+              accounting. I'm skilled at translating complex requirements into elegant technical solutions,
+              building responsive applications, and delivering high-quality digital products.
+            </p>
+            <p data-reveal>
+              My path into engineering started in ledgers and reconciliations. That transition gave me something
+              most developers learn late: an obsession with <em>accuracy</em>, a habit of analytical thinking, and a
+              real understanding of how the business behind the software works.
+            </p>
+
+            <ul class="about__facts" data-reveal-stagger>
+              <li><svg><use href="#i-pin"/></svg><span>Based in India · Open to remote</span></li>
+              <li><svg><use href="#i-brief"/></svg><span>3+ years in finance &amp; accounting</span></li>
+              <li><svg><use href="#i-code"/></svg><span>MERN Stack certified, 2025</span></li>
+            </ul>
+          </div>
+
+          <!-- Finance → Code journey graphic -->
+          <figure class="journey glass" data-reveal aria-labelledby="journey-cap">
+            <figcaption id="journey-cap" class="journey__head">
+              <span class="journey__tag journey__tag--fin"><svg><use href="#i-calc"/></svg>Finance</span>
+              <span class="journey__arrow" aria-hidden="true"></span>
+              <span class="journey__tag journey__tag--code"><svg><use href="#i-code"/></svg>Code</span>
+            </figcaption>
+            <p class="journey__sub">How my accounting skills translate into engineering</p>
+
+            <ol class="journey__rows">
+              <li class="journey__row">
+                <span class="journey__from">Bank reconciliation</span>
+                <span class="journey__wire" aria-hidden="true"><i></i></span>
+                <span class="journey__to">Data integrity &amp; validation</span>
+              </li>
+              <li class="journey__row">
+                <span class="journey__from">Ledger accuracy</span>
+                <span class="journey__wire" aria-hidden="true"><i></i></span>
+                <span class="journey__to">Clean CRUD &amp; business logic</span>
+              </li>
+              <li class="journey__row">
+                <span class="journey__from">Financial reporting</span>
+                <span class="journey__wire" aria-hidden="true"><i></i></span>
+                <span class="journey__to">Dashboards &amp; data UI</span>
+              </li>
+              <li class="journey__row">
+                <span class="journey__from">Audit compliance</span>
+                <span class="journey__wire" aria-hidden="true"><i></i></span>
+                <span class="journey__to">Auth &amp; secure APIs</span>
+              </li>
+            </ol>
+
+            <div class="journey__foot">
+              <div><strong>2022</strong><span>Accountant</span></div>
+              <div class="journey__line" aria-hidden="true"><span></span></div>
+              <div><strong>2025</strong><span>Full Stack Dev</span></div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SKILLS ===================== -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <span class="eyebrow" data-reveal>02 — Skills</span>
+            <h2 class="section-title" id="skills-title" data-reveal>Tools of the <span class="grad">trade.</span></h2>
+          </div>
+          <p class="section-note" data-reveal>
+            <svg><use href="#i-move"/></svg> Go ahead, drag the chips around. They spring back.
+          </p>
+        </header>
+
+        <div class="tabs" role="group" aria-label="Filter skills by category" data-reveal>
+          <button type="button" class="tab is-active" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" class="tab" aria-pressed="false" data-filter="frontend">Frontend</button>
+          <button type="button" class="tab" aria-pressed="false" data-filter="backend">Backend</button>
+          <button type="button" class="tab" aria-pressed="false" data-filter="tools">Database &amp; Tools</button>
+          <button type="button" class="tab" aria-pressed="false" data-filter="finance">Finance</button>
+        </div>
+
+        <div class="bento" data-reveal-stagger>
+          <!-- Frontend -->
+          <article class="skill-card glass skill-card--frontend" data-cat="frontend" data-tilt>
+            <div class="skill-card__head">
+              <span class="skill-card__icon"><svg><use href="#i-monitor"/></svg></span>
+              <div>
+                <h3>Frontend</h3>
+                <p>Pixel-precise, responsive interfaces</p>
+              </div>
+              <span class="skill-card__count">08</span>
+            </div>
+            <ul class="chips">
+              <li class="chip" data-cursor="drag"><i class="devicon-react-original colored"></i>React.js</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-javascript-plain colored"></i>JavaScript (ES6+)</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-html5-plain colored"></i>HTML5</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-css3-plain colored"></i>CSS3</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-bootstrap-plain colored"></i>Bootstrap</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">⚓</b>React Hooks</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">◱</b>Responsive Design</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">⌘</b>DOM Manipulation</li>
+            </ul>
+          </article>
+
+          <!-- Backend -->
+          <article class="skill-card glass skill-card--backend" data-cat="backend" data-tilt>
+            <div class="skill-card__head">
+              <span class="skill-card__icon"><svg><use href="#i-server"/></svg></span>
+              <div>
+                <h3>Backend</h3>
+                <p>APIs that are fast, secure &amp; structured</p>
+              </div>
+              <span class="skill-card__count">07</span>
+            </div>
+            <ul class="chips">
+              <li class="chip" data-cursor="drag"><i class="devicon-nodejs-plain colored"></i>Node.js</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-express-original"></i>Express.js</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-python-plain colored"></i>Python</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">{}</b>REST APIs</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">▦</b>MVC Architecture</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">🔒</b>Auth &amp; Authorization</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">⟳</b>CRUD Operations</li>
+            </ul>
+          </article>
+
+          <!-- Database & tools -->
+          <article class="skill-card glass skill-card--tools" data-cat="tools" data-tilt>
+            <div class="skill-card__head">
+              <span class="skill-card__icon"><svg><use href="#i-database"/></svg></span>
+              <div>
+                <h3>Database &amp; Tools</h3>
+                <p>From schema to production deploy</p>
+              </div>
+              <span class="skill-card__count">09</span>
+            </div>
+            <ul class="chips">
+              <li class="chip" data-cursor="drag"><i class="devicon-mongodb-plain colored"></i>MongoDB</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-git-plain colored"></i>Git</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-github-original"></i>GitHub</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-vscode-plain colored"></i>VS Code</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-chrome-plain colored"></i>Chrome DevTools</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-postman-plain colored"></i>Postman</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-vercel-original"></i>Vercel</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-netlify-plain colored"></i>Netlify</li>
+              <li class="chip" data-cursor="drag"><i class="devicon-npm-original-wordmark colored"></i>NPM</li>
+            </ul>
+          </article>
+
+          <!-- Finance -->
+          <article class="skill-card glass skill-card--finance" data-cat="finance" data-tilt>
+            <div class="skill-card__head">
+              <span class="skill-card__icon"><svg><use href="#i-chart"/></svg></span>
+              <div>
+                <h3>Finance</h3>
+                <p>The edge that sets my work apart</p>
+              </div>
+              <span class="skill-card__count">06</span>
+            </div>
+            <ul class="chips">
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">₹</b>Tally Prime</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">Q</b>QuickBooks</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">⊞</b>Microsoft Excel</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">▤</b>Financial Reporting</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">⇄</b>Bank Reconciliation</li>
+              <li class="chip" data-cursor="drag"><b class="chip__glyph">§</b>Accounting Principles</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. PROJECTS ===================== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <span class="eyebrow" data-reveal>03 — Selected Work</span>
+            <h2 class="section-title" id="projects-title" data-reveal>Things I've <span class="grad">built.</span></h2>
+          </div>
+          <p class="section-note" data-reveal>Four live projects, designed and engineered end to end. Click any preview to open it.</p>
+        </header>
+
+        <div class="projects__grid">
+          <!-- 01 · Flagship: Gym platform -->
+          <article class="project project--flagship glass" data-tilt data-reveal>
+            <a class="project__media" href="https://gym-frontend-two-gamma.vercel.app/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the Fitness & Gym Management Platform live site (opens in a new tab)">
+              <span class="project__badge"><svg><use href="#i-spark"/></svg>Flagship</span>
+              <!-- CSS-built mockup of the gym dashboard. Swap for a real screenshot <img> any time. -->
+              <div class="mock mock--gym" role="img" aria-label="Mockup of the Fitness and Gym Management Platform dashboard showing member stats, a weekly workout chart and today's class schedule">
+                <div class="mock__browser"><span></span><span></span><span></span><em>gym-frontend-two-gamma.vercel.app</em></div>
+                <div class="mock__app">
+                  <aside class="mg-side">
+                    <b class="mg-logo"></b>
+                    <i class="is-on"></i><i></i><i></i><i></i><i></i>
+                  </aside>
+                  <div class="mg-main">
+                    <div class="mg-top"><span class="mg-h"></span><span class="mg-avatar"></span></div>
+                    <div class="mg-stats">
+                      <div><small>Members</small><strong>1,284</strong><em>+12%</em></div>
+                      <div><small>Classes</small><strong>42</strong><em>+5</em></div>
+                      <div><small>Check-ins</small><strong>368</strong><em>today</em></div>
+                    </div>
+                    <div class="mg-body">
+                      <div class="mg-chart">
+                        <small>Weekly workouts</small>
+                        <div class="mg-bars"><i style="--h:45%"></i><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:88%"></i><i style="--h:64%"></i><i style="--h:95%"></i><i style="--h:50%"></i></div>
+                      </div>
+                      <div class="mg-list">
+                        <small>Today's classes</small>
+                        <p><b></b>HIIT Blast<span>07:00</span></p>
+                        <p><b></b>Power Yoga<span>09:30</span></p>
+                        <p><b></b>Strength Lab<span>18:00</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="project__body">
+              <div class="project__meta"><span>01</span><span>Full-Stack · Deployed on Vercel</span></div>
+              <h3 class="project__title">Fitness &amp; Gym Management Platform</h3>
+              <p class="project__desc">
+                A full-stack fitness platform with secure authentication, workout tracking, class scheduling and
+                membership management, backed by complete CRUD operations and a fully responsive UI.
+              </p>
+              <ul class="tags">
+                <li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>JWT Auth</li><li>Vercel</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://gym-frontend-two-gamma.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary btn--sm" data-magnetic><span>Live Demo</span><svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+                <!-- TODO: point to this project's repository -->
+                <a href="https://github.com/ashofficial338-jpg" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-magnetic><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 · Feature case study: Medical shop / pharmacy system -->
+          <article class="project project--feature project--med glass" data-reveal>
+            <div class="med__top">
+              <a class="project__media" href="https://med-shop-delta.vercel.app/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the GHM Pharmacy Management System live site (opens in a new tab)">
+                <span class="project__badge project__badge--med"><svg><use href="#i-spark"/></svg>New · Case Study</span>
+                <div class="mock mock--med" role="img" aria-label="Mockup of the GHM pharmacy dashboard showing today's sales, bills and low-stock counts, a revenue trend chart and a list of medicine batches expiring soon">
+                  <div class="mock__browser"><span></span><span></span><span></span><em>med-shop-delta.vercel.app/dashboard</em></div>
+                  <div class="mock__app">
+                    <aside class="mm-side">
+                      <b class="mm-logo">G</b>
+                      <i class="is-on"></i><i></i><i></i><i></i><i></i><i></i>
+                    </aside>
+                    <div class="mm-main">
+                      <div class="mm-top"><strong>Dashboard</strong><span class="mm-pill">Admin</span></div>
+                      <div class="mm-kpis">
+                        <div><small>Today's Sales</small><strong>₹48,250</strong><em>▲ 8.4%</em></div>
+                        <div><small>Bills</small><strong>126</strong><em>▲ 14</em></div>
+                        <div><small>Low Stock</small><strong class="is-warn">8</strong><em class="is-warn">reorder</em></div>
+                        <div><small>Expiring</small><strong class="is-alert">5</strong><em class="is-alert">≤ 30 days</em></div>
+                      </div>
+                      <div class="mm-body">
+                        <div class="mm-chart">
+                          <small>Revenue · last 7 days</small>
+                          <svg viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true">
+                            <defs>
+                              <linearGradient id="mmArea" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#14b8a6" stop-opacity=".55"/>
+                                <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+                              </linearGradient>
+                            </defs>
+                            <path d="M0 52 C 20 48, 30 30, 50 34 S 80 50, 100 36 S 140 12, 160 20 S 190 8, 200 10 L200 70 L0 70 Z" fill="url(#mmArea)"/>
+                            <path class="mm-line" d="M0 52 C 20 48, 30 30, 50 34 S 80 50, 100 36 S 140 12, 160 20 S 190 8, 200 10" fill="none" stroke="#2dd4bf" stroke-width="2"/>
+                          </svg>
+                        </div>
+                        <div class="mm-list">
+                          <small>Expiring soon</small>
+                          <p><b></b>Paracetamol 650<span>12d</span></p>
+                          <p><b></b>Amoxicillin 500<span>19d</span></p>
+                          <p><b></b>Cetirizine 10<span>27d</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Floating invoice chip -->
+                <div class="mm-invoice" aria-hidden="true">
+                  <span class="mm-invoice__icon">₹</span>
+                  <span><small>Bill #INV-1042 · GST</small><strong>₹1,386.00 · PDF ready</strong></span>
+                </div>
+              </a>
+
+              <div class="project__body">
+                <div class="project__meta"><span>02</span><span>Full-Stack MERN · Deployed on Vercel</span></div>
+                <h3 class="project__title">GHM — Pharmacy Management &amp; Billing System</h3>
+                <p class="project__desc">
+                  An end-to-end operations platform for a medical shop. It brings point-of-sale billing, batch-wise
+                  inventory with expiry tracking, purchases, vendor &amp; customer ledgers and a live profit &amp; loss
+                  dashboard into one secure web app, replacing manual registers with accurate, real-time data.
+                </p>
+                <div class="med__role">
+                  <span class="med__role-label">My role</span>
+                  <p>
+                    Designed and developed the product end to end: MongoDB data modelling, a secure Express REST API,
+                    the React 19 interface and cloud deployment. My accounting background shaped the ledgers,
+                    GST billing and P&amp;L logic.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key features -->
+            <ul class="med__features" data-reveal-stagger>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-calc"/></svg></span>
+                <div><h4>POS billing &amp; GST invoices</h4><p>Fast cart-based checkout with GST, discounts, payment modes and one-click PDF bills.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-database"/></svg></span>
+                <div><h4>Batch &amp; expiry tracking</h4><p>First-Expiry-First-Out stock allocation across batches, with pack + loose-unit selling (strips &amp; tablets).</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-chart"/></svg></span>
+                <div><h4>Live business dashboard</h4><p>Revenue trends, top products, low-stock and expiring-soon alerts, plus a full profit &amp; loss statement.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-brief"/></svg></span>
+                <div><h4>Purchases &amp; ledgers</h4><p>Vendor purchases, supplier and customer credit ledgers, expenses and a daily day book.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-shield"/></svg></span>
+                <div><h4>Role-based security</h4><p>JWT authentication with hashed passwords and Admin / Staff permissions on every route.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-download"/></svg></span>
+                <div><h4>Reports &amp; data import</h4><p>Excel and PDF report exports, bulk product import and Cloudinary image uploads.</p></div>
+              </li>
+            </ul>
+
+            <div class="med__foot">
+              <ul class="tags">
+                <li>React 19</li><li>Vite</li><li>Tailwind CSS</li><li>React Router</li><li>Recharts</li>
+                <li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Mongoose</li><li>JWT</li>
+                <li>PDFKit</li><li>ExcelJS</li><li>Cloudinary</li><li>Vercel</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://med-shop-delta.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary btn--sm" data-magnetic><span>Live Demo</span><svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+                <!-- TODO: point to this project's repository -->
+                <a href="https://github.com/ashofficial338-jpg" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-magnetic><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span></a>
+                <span class="med__note"><svg><use href="#i-shield"/></svg>Secure login · demo access on request</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 · Fitness website -->
+          <article class="project glass" data-tilt data-reveal>
+            <a class="project__media" href="https://fitnesswebsit.netlify.app/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the Fitness Website Platform live site (opens in a new tab)">
+              <div class="mock mock--fit" role="img" aria-label="Mockup of the Fitness Website Platform showing a bold hero banner and trainer profile cards">
+                <div class="mock__browser"><span></span><span></span><span></span><em>fitnesswebsit.netlify.app</em></div>
+                <div class="mf-hero">
+                  <div class="mf-nav"><b></b><i></i><i></i><i></i><u></u></div>
+                  <strong>TRAIN<br />HARDER.</strong>
+                  <span class="mf-btn"></span>
+                </div>
+                <div class="mf-cards">
+                  <div><b style="--c1:#f97316;--c2:#ef4444"></b><i></i><i></i></div>
+                  <div><b style="--c1:#6366f1;--c2:#a855f7"></b><i></i><i></i></div>
+                  <div><b style="--c1:#10b981;--c2:#06b6d4"></b><i></i><i></i></div>
+                </div>
+              </div>
+            </a>
+            <div class="project__body">
+              <div class="project__meta"><span>03</span><span>Frontend · Netlify</span></div>
+              <h3 class="project__title">Fitness Website Platform</h3>
+              <p class="project__desc">
+                A responsive fitness site with trainer profiles, membership plans, service listings, dynamic filtering,
+                smooth animations and mobile-first navigation.
+              </p>
+              <ul class="tags"><li>React.js</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li></ul>
+              <div class="project__links">
+                <a href="https://fitnesswebsit.netlify.app/" target="_blank" rel="noopener" class="btn btn--primary btn--sm" data-magnetic><span>Live Demo</span><svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+                <!-- TODO: point to this project's repository -->
+                <a href="https://github.com/ashofficial338-jpg" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-magnetic><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 · Naruto image gallery -->
+          <article class="project glass" data-tilt data-reveal>
+            <a class="project__media" href="https://ashofficial338-jpg.github.io/Naruto-Gird/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the Naruto Responsive Image Gallery live site (opens in a new tab)">
+              <div class="mock mock--gallery" role="img" aria-label="Mockup of the Naruto responsive image gallery showing a masonry grid of colourful image tiles">
+                <div class="mock__browser"><span></span><span></span><span></span><em>ashofficial338-jpg.github.io/Naruto-Gird</em></div>
+                <div class="gal">
+                  <i style="--a:#f97316;--b:#facc15" class="t2"></i>
+                  <i style="--a:#ef4444;--b:#f97316"></i>
+                  <i style="--a:#0ea5e9;--b:#6366f1"></i>
+                  <i style="--a:#1f2937;--b:#ef4444" class="t2"></i>
+                  <i style="--a:#10b981;--b:#0ea5e9"></i>
+                  <i style="--a:#facc15;--b:#f97316"></i>
+                </div>
+              </div>
+            </a>
+            <div class="project__body">
+              <div class="project__meta"><span>04</span><span>Frontend · GitHub Pages</span></div>
+              <h3 class="project__title">Naruto Gallery — Responsive Image Grid</h3>
+              <p class="project__desc">
+                A Naruto-themed responsive image gallery built on a Bootstrap grid, with refined hover effects,
+                optimized layouts, smooth transitions and reliable cross-device support.
+              </p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>Bootstrap 5</li><li>JavaScript</li></ul>
+              <div class="project__links">
+                <a href="https://ashofficial338-jpg.github.io/Naruto-Gird/" target="_blank" rel="noopener" class="btn btn--primary btn--sm" data-magnetic><span>Live Demo</span><svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+                <a href="https://github.com/ashofficial338-jpg/Naruto-Gird" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-magnetic><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. EXPERIENCE ===================== -->
+    <section class="section experience" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <span class="eyebrow" data-reveal>04 — Career Journey</span>
+          <h2 class="section-title" id="exp-title" data-reveal>From balance sheets<br />to <span class="grad">code bases.</span></h2>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline__track" aria-hidden="true"><span class="timeline__progress"></span></div>
+
+          <!-- Upcoming / current direction -->
+          <article class="tl-item tl-item--now">
+            <span class="tl-item__dot" aria-hidden="true"></span>
+            <div class="tl-card glass" data-tilt>
+              <span class="tl-card__date">2025 — Now</span>
+              <h3>Full Stack Developer <span class="tl-card__at">MERN Stack</span></h3>
+              <p class="tl-card__text">Certified in full-stack web development and shipping production-ready React, Node.js and MongoDB applications to the cloud.</p>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <span class="tl-item__dot" aria-hidden="true"></span>
+            <div class="tl-card glass" data-tilt>
+              <span class="tl-card__date">2024 — Present</span>
+              <h3>Accounts Assistant <span class="tl-card__at">Renaissance RTW Asia Pvt Ltd</span></h3>
+              <ul>
+                <li>Maintained comprehensive financial records and improved workflow through systematic data management.</li>
+                <li>Processed monthly reconciliation reports with <strong>100% accuracy</strong>.</li>
+                <li>Implemented tracking systems that <strong>reduced clerical errors by 25%</strong>.</li>
+                <li>Collaborated with cross-functional teams to streamline financial reporting.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <span class="tl-item__dot" aria-hidden="true"></span>
+            <div class="tl-card glass" data-tilt>
+              <span class="tl-card__date">2023 — 2024</span>
+              <h3>Accounts Assistant <span class="tl-card__at">Poppy Groups</span></h3>
+              <ul>
+                <li>Managed ledgers, journal entries, transaction documentation and daily accounting operations.</li>
+                <li>Supported internal and external audits with <strong>100% regulatory compliance</strong>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <span class="tl-item__dot" aria-hidden="true"></span>
+            <div class="tl-card glass" data-tilt>
+              <span class="tl-card__date">2022 — 2023</span>
+              <h3>Accountant <span class="tl-card__at">UNV Consulting</span></h3>
+              <ul>
+                <li>Managed financial transactions and reconciliations in QuickBooks.</li>
+                <li>Processed purchase orders, sales invoices, petty cash entries and financial reports.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. ACHIEVEMENTS ===================== -->
+    <section class="section achievements" id="achievements" aria-labelledby="ach-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow" data-reveal>05 — Impact</span>
+          <h2 class="section-title" id="ach-title" data-reveal>Numbers that <span class="grad">add up.</span></h2>
+        </header>
+
+        <div class="stats" data-reveal-stagger>
+          <div class="stat glass">
+            <strong class="stat__num"><span data-count="3">0</span><sup>+</sup></strong>
+            <span class="stat__label">Production apps deployed</span>
+          </div>
+          <div class="stat glass">
+            <strong class="stat__num"><span data-count="25">0</span><sup>%</sup></strong>
+            <span class="stat__label">Fewer processing errors</span>
+          </div>
+          <div class="stat glass">
+            <strong class="stat__num"><span data-count="99.9" data-decimals="1">0</span><sup>%</sup></strong>
+            <span class="stat__label">Cloud uptime</span>
+          </div>
+          <div class="stat glass">
+            <strong class="stat__num"><span data-count="100">0</span><sup>%</sup></strong>
+            <span class="stat__label">Reconciliation accuracy</span>
+          </div>
+        </div>
+
+        <div class="wins" data-reveal-stagger>
+          <article class="win glass" data-tilt>
+            <span class="win__icon"><svg><use href="#i-rocket"/></svg></span>
+            <h3>Cloud-deployed products</h3>
+            <p>3+ production-ready web applications deployed to cloud platforms with 99.9% uptime.</p>
+          </article>
+          <article class="win glass" data-tilt>
+            <span class="win__icon win__icon--gold"><svg><use href="#i-target"/></svg></span>
+            <h3>Error reduction</h3>
+            <p>25% reduction in financial processing errors through systematic tracking.</p>
+          </article>
+          <article class="win glass" data-tilt>
+            <span class="win__icon"><svg><use href="#i-devices"/></svg></span>
+            <h3>Every screen covered</h3>
+            <p>Responsive applications optimized for all device sizes, from mobile to wide desktop.</p>
+          </article>
+          <article class="win glass" data-tilt>
+            <span class="win__icon win__icon--emerald"><svg><use href="#i-trend"/></svg></span>
+            <h3>Career transition</h3>
+            <p>Moved from finance and accounting into full-stack web development.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. EDUCATION ===================== -->
+    <section class="section education" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow" data-reveal>06 — Education</span>
+          <h2 class="section-title" id="edu-title" data-reveal>Credentials &amp; <span class="grad">learning.</span></h2>
+        </header>
+
+        <div class="certs">
+          <article class="cert" data-tilt data-reveal>
+            <div class="cert__frame">
+              <div class="cert__top">
+                <span class="cert__kind">Certification</span>
+                <span class="cert__year">2025</span>
+              </div>
+              <span class="cert__seal" aria-hidden="true"><svg><use href="#i-award"/></svg></span>
+              <h3 class="cert__title">Full Stack Web Development</h3>
+              <p class="cert__sub">MERN Stack · MongoDB, Express, React, Node</p>
+              <div class="cert__foot">
+                <span class="cert__org">Entri Elevate</span>
+                <span class="cert__sig" aria-hidden="true">Verified</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert cert--gold" data-tilt data-reveal>
+            <div class="cert__frame">
+              <div class="cert__top">
+                <span class="cert__kind">Degree</span>
+                <span class="cert__year">2019 — 2022</span>
+              </div>
+              <span class="cert__seal" aria-hidden="true"><svg><use href="#i-grad"/></svg></span>
+              <h3 class="cert__title">Bachelor of Commerce</h3>
+              <p class="cert__sub">Computer Applications · Scored 75%</p>
+              <div class="cert__foot">
+                <span class="cert__org">KSG College of Arts and Science</span>
+                <span class="cert__sig" aria-hidden="true">75%</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. CONTACT ===================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <span class="eyebrow" data-reveal>07 — Contact</span>
+          <h2 class="section-title contact__title" id="contact-title" data-reveal>
+            Let's build something <span class="grad">great</span> together.
+          </h2>
+          <p class="contact__note" data-reveal>
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Available for freelance projects and full-time opportunities.
+          </p>
+
+          <ul class="contact__list" data-reveal-stagger>
+            <li>
+              <a href="mailto:ashofficial338@gmail.com" class="contact__item" data-magnetic>
+                <span class="contact__icon"><svg><use href="#i-mail"/></svg></span>
+                <span><small>Email</small>ashofficial338@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+919360780159" class="contact__item" data-magnetic>
+                <span class="contact__icon"><svg><use href="#i-phone"/></svg></span>
+                <span><small>Phone</small>+91 93607 80159</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="socials" data-reveal aria-label="Social links">
+            <li><a href="#" class="social" aria-label="LinkedIn" data-magnetic><svg><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://github.com/ashofficial338-jpg" target="_blank" rel="noopener" class="social" aria-label="GitHub" data-magnetic><svg><use href="#i-github"/></svg></a></li>
+          </ul>
+        </div>
+
+        <!--
+          Contact form.
+          To receive messages directly, set data-endpoint to a form backend URL
+          (e.g. https://formspree.io/f/xxxxxxx). Without one, submitting opens the
+          visitor's email app with the message pre-filled.
+        -->
+        <div class="form-wrap glass" data-reveal>
+          <form class="form" novalidate data-endpoint="">
+            <div class="field">
+              <input type="text" id="f-name" name="name" placeholder=" " autocomplete="name" required />
+              <label for="f-name">Your name</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <span class="field__error" role="alert"></span>
+            </div>
+            <div class="field">
+              <input type="email" id="f-email" name="email" placeholder=" " autocomplete="email" required />
+              <label for="f-email">Email address</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <span class="field__error" role="alert"></span>
+            </div>
+            <div class="field">
+              <textarea id="f-msg" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="f-msg">Tell me about your project</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <span class="field__error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--block form__submit" data-magnetic>
+              <span class="form__submit-text">Send Message</span>
+              <svg class="icon"><use href="#i-send"/></svg>
+            </button>
+          </form>
+
+          <div class="form-success" hidden>
+            <svg class="form-success__check" viewBox="0 0 52 52" aria-hidden="true">
+              <circle cx="26" cy="26" r="24" />
+              <path d="M15 27l7 7 15-15" />
+            </svg>
+            <h3>Message on its way!</h3>
+            <p class="form-success__text">Thanks for reaching out. I'll get back to you soon.</p>
+            <button type="button" class="btn btn--ghost btn--sm form-success__reset">Send another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 9. FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__big" aria-hidden="true">Ashwin Kumar N</p>
+      <div class="footer__row">
+        <p class="footer__copy">© <span class="year">2026</span> Ashwin Kumar N · Designed &amp; built with care.</p>
+        <ul class="socials socials--sm" aria-label="Social links">
+          <li><a href="#" class="social" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a></li>
+          <li><a href="https://github.com/ashofficial338-jpg" target="_blank" rel="noopener" class="social" aria-label="GitHub"><svg><use href="#i-github"/></svg></a></li>
+          <li><a href="mailto:ashofficial338@gmail.com" class="social" aria-label="Email"><svg><use href="#i-mail"/></svg></a></li>
+        </ul>
+        <a href="#hero" class="to-top" aria-label="Back to top" data-magnetic>
+          <svg class="to-top__ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/></svg>
+          <svg class="icon"><use href="#i-arrow-up"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
