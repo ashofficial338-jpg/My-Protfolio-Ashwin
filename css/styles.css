@@ -731,6 +731,31 @@ a.project__media { display: block; color: inherit; }
 .med__note { display: inline-flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--muted); margin-left: 6px; }
 .med__note svg { width: 15px; height: 15px; color: var(--teal-ink); }
 
+/* ---- Feature case study: AURELIA department store (gold variant of the med layout) ---- */
+.project--aur { --teal: #d4a24c; --teal-ink: #e8c170; --coral: #8b8ba1; }
+[data-theme="light"] .project--aur { --teal-ink: #9a6b12; }
+.project--aur .med__top .project__media {
+  order: 0;
+  background:
+    radial-gradient(120% 120% at 0% 0%, rgba(212, 162, 76, 0.28), transparent 55%),
+    radial-gradient(120% 120% at 100% 100%, rgba(139, 92, 246, 0.14), transparent 55%),
+    var(--bg-3);
+}
+.project--aur .project__badge--med { color: #2a1d05; }
+.project--aur .med__features li:hover { border-color: rgba(212, 162, 76, 0.55); }
+.project--aur .med__ficon { background: rgba(212, 162, 76, 0.12); border-color: rgba(212, 162, 76, 0.38); }
+.project--aur .mm-logo { background: linear-gradient(135deg, #e8c170, #a8741a); font-family: "Georgia", serif; }
+.project--aur .mm-side i.is-on { background: #d4a24c; }
+.project--aur .mm-pill { background: rgba(212, 162, 76, 0.18); color: #f1d08f; }
+.project--aur .mm-kpis em { color: #e8c170; }
+.project--aur .mm-list p b { background: #e8c170; }
+.project--aur .mm-list p:nth-of-type(2) b { background: #c4b5fd; }
+.project--aur .mm-list p:nth-of-type(3) b { background: #8b8ba1; }
+.project--aur .mm-list p span { color: #e8c170; }
+.project--aur .mm-invoice { left: auto; right: clamp(8px, 2vw, 22px); border-color: rgba(212, 162, 76, 0.45); }
+.project--aur .mm-invoice__icon { background: #d4a24c; color: #2a1d05; }
+.project--aur .mm-invoice__icon svg { width: 15px; height: 15px; }
+
 /* Pharmacy dashboard mockup */
 .mm-side { width: 11%; padding: 12px 0; display: flex; flex-direction: column; align-items: center; gap: 10px; border-right: 1px solid rgba(255, 255, 255, 0.06); }
 .mm-logo { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 7px; background: linear-gradient(135deg, #14b8a6, #0f766e); color: #fff; font-size: 0.6rem; font-weight: 800; margin-bottom: 6px; }
