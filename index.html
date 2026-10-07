@@ -464,7 +464,7 @@
             <span class="eyebrow" data-reveal>03 — Selected Work</span>
             <h2 class="section-title" id="projects-title" data-reveal>Things I've <span class="grad">built.</span></h2>
           </div>
-          <p class="section-note" data-reveal>Five live projects, designed and engineered end to end. Click any preview to open it.</p>
+          <p class="section-note" data-reveal>Six live projects, designed and engineered end to end. Click any preview to open it.</p>
         </header>
 
         <div class="projects__grid">
@@ -521,11 +521,124 @@
             </div>
           </article>
 
-          <!-- 02 · Feature case study: Aurelia department store ERP -->
+          <!-- 02 · Feature case study: StitchFlow garment ERP -->
+          <article class="project project--feature project--med project--stf glass" data-reveal>
+            <div class="med__top">
+              <a class="project__media" href="https://garment-sector.vercel.app/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the StitchFlow garment ERP live site (opens in a new tab)">
+                <span class="project__badge project__badge--med"><svg><use href="#i-spark"/></svg>New · Case Study</span>
+                <div class="mock mock--med" role="img" aria-label="Mockup of the StitchFlow job control tower showing active jobs, in-production, shipped and margin figures, a cut-sew-pack progress chart and a list of jobs by stage">
+                  <div class="mock__browser"><span></span><span></span><span></span><em>garment-sector.vercel.app/control-tower</em></div>
+                  <div class="mock__app">
+                    <aside class="mm-side">
+                      <b class="mm-logo">S</b>
+                      <i class="is-on"></i><i></i><i></i><i></i><i></i><i></i>
+                    </aside>
+                    <div class="mm-main">
+                      <div class="mm-top"><strong>Job Control Tower</strong><span class="mm-pill">Merchandiser</span></div>
+                      <div class="mm-kpis">
+                        <div><small>Active Jobs</small><strong>38</strong><em>▲ 6 this month</em></div>
+                        <div><small>In Production</small><strong>21</strong><em>cut · sew · pack</em></div>
+                        <div><small>T&amp;A Delays</small><strong class="is-warn">4</strong><em class="is-warn">follow up</em></div>
+                        <div><small>Avg Margin</small><strong>18.6%</strong><em>costing vs actual</em></div>
+                      </div>
+                      <div class="mm-body">
+                        <div class="mm-chart">
+                          <small>Pieces produced · 7 days</small>
+                          <svg viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true">
+                            <defs>
+                              <linearGradient id="stfArea" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#6366f1" stop-opacity=".55"/>
+                                <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+                              </linearGradient>
+                            </defs>
+                            <path d="M0 54 C 20 50, 35 38, 55 40 S 85 30, 105 26 S 145 22, 165 14 S 190 10, 200 6 L200 70 L0 70 Z" fill="url(#stfArea)"/>
+                            <path d="M0 60 C 25 58, 45 52, 65 50 S 105 46, 125 40 S 170 32, 200 28" fill="none" stroke="#8b8ba1" stroke-width="1.5" stroke-dasharray="3 3"/>
+                            <path class="mm-line" d="M0 54 C 20 50, 35 38, 55 40 S 85 30, 105 26 S 145 22, 165 14 S 190 10, 200 6" fill="none" stroke="#a5b4fc" stroke-width="2"/>
+                          </svg>
+                        </div>
+                        <div class="mm-list">
+                          <small>Jobs by stage</small>
+                          <p><b></b>JOB-2417 · Sewing<span>72%</span></p>
+                          <p><b></b>JOB-2409 · Finishing<span>91%</span></p>
+                          <p><b></b>JOB-2421 · Cutting<span>34%</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Floating traceability chip -->
+                <div class="mm-invoice" aria-hidden="true">
+                  <span class="mm-invoice__icon"><svg><use href="#i-spark"/></svg></span>
+                  <span><small>One job · one data flow</small><strong>Enquiry → Shipment traced</strong></span>
+                </div>
+              </a>
+
+              <div class="project__body">
+                <div class="project__meta"><span>02</span><span>Full-Stack Garment ERP · Deployed on Vercel</span></div>
+                <h3 class="project__title">StitchFlow — Garment Order-to-Shipment ERP</h3>
+                <p class="project__desc">
+                  An end-to-end ERP for garment export houses that follows every order as a single job, from buyer
+                  enquiry, quotation and costing through yarn, knitting, fabric processing, cutting, sewing, finishing,
+                  inspection, packing and shipment, to invoicing and payments, with full traceability at each step.
+                </p>
+                <div class="med__role">
+                  <span class="med__role-label">My role</span>
+                  <p>
+                    Designed and built it end to end: 30+ department modules connected through one job number, a job
+                    control tower, role-based dashboards, profit analysis against costing, and the React interface,
+                    REST API integration and cloud deployment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key features -->
+            <ul class="med__features" data-reveal-stagger>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-brief"/></svg></span>
+                <div><h4>Merchandising</h4><p>Buyer enquiries, quotations, costing, sampling &amp; approval, PP meetings and buyer documents in one place.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-database"/></svg></span>
+                <div><h4>Materials &amp; booking</h4><p>Yarn inward, fabric and trim booking, knitting and fabric processing, with stock reports and consumption tracking.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-calc"/></svg></span>
+                <div><h4>Production floor</h4><p>Production planning, cutting, sewing, finishing, final inspection with re-inspection, and packing by job.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-spark"/></svg></span>
+                <div><h4>Job control tower &amp; T&amp;A</h4><p>One screen per job showing every stage, Time &amp; Action milestones, alerts, and jobs ready to close.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-chart"/></svg></span>
+                <div><h4>Shipping, finance &amp; profit</h4><p>Shipments, invoices, payments and job expenses, with profit analysis per job and a report center.</p></div>
+              </li>
+              <li>
+                <span class="med__ficon"><svg><use href="#i-shield"/></svg></span>
+                <div><h4>Roles, audit &amp; recycle bin</h4><p>Role and permission management, department dashboards, an audit trail with reasons, and soft-delete recovery.</p></div>
+              </li>
+            </ul>
+
+            <div class="med__foot">
+              <ul class="tags">
+                <li>React</li><li>Vite</li><li>React Router</li><li>Axios</li><li>REST API</li>
+                <li>JWT</li><li>Charts</li><li>PDF Export</li><li>Vercel</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://garment-sector.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary btn--sm" data-magnetic><span>Live Demo</span><svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+                <!-- TODO: point to this project's repository -->
+                <a href="https://github.com/ashofficial338-jpg" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-magnetic><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span></a>
+                <span class="med__note"><svg><use href="#i-shield"/></svg>Secure login · demo access on request</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 · Feature case study: Aurelia department store ERP -->
           <article class="project project--feature project--med project--aur glass" data-reveal>
             <div class="med__top">
               <a class="project__media" href="https://aurelia-department-store.vercel.app/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the AURELIA Department Store management system live site (opens in a new tab)">
-                <span class="project__badge project__badge--med"><svg><use href="#i-spark"/></svg>New · Case Study</span>
+                <span class="project__badge project__badge--med"><svg><use href="#i-spark"/></svg>Case Study</span>
                 <div class="mock mock--med" role="img" aria-label="Mockup of the AURELIA retail dashboard showing today's sales, bills, low-stock and GST figures, a sales versus purchases chart and a list of top-selling products">
                   <div class="mock__browser"><span></span><span></span><span></span><em>aurelia-department-store.vercel.app/dashboard</em></div>
                   <div class="mock__app">
@@ -574,7 +687,7 @@
               </a>
 
               <div class="project__body">
-                <div class="project__meta"><span>02</span><span>Full-Stack Retail ERP · Deployed on Vercel</span></div>
+                <div class="project__meta"><span>03</span><span>Full-Stack Retail ERP · Deployed on Vercel</span></div>
                 <h3 class="project__title">AURELIA — Department Store Management System</h3>
                 <p class="project__desc">
                   A complete back-office and billing platform for a multi-category department store. It runs the
@@ -634,7 +747,7 @@
             </div>
           </article>
 
-          <!-- 03 · Feature case study: Medical shop / pharmacy system -->
+          <!-- 04 · Feature case study: Medical shop / pharmacy system -->
           <article class="project project--feature project--med glass" data-reveal>
             <div class="med__top">
               <a class="project__media" href="https://med-shop-delta.vercel.app/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the GHM Pharmacy Management System live site (opens in a new tab)">
@@ -686,7 +799,7 @@
               </a>
 
               <div class="project__body">
-                <div class="project__meta"><span>03</span><span>Full-Stack MERN · Deployed on Vercel</span></div>
+                <div class="project__meta"><span>04</span><span>Full-Stack MERN · Deployed on Vercel</span></div>
                 <h3 class="project__title">GHM — Pharmacy Management &amp; Billing System</h3>
                 <p class="project__desc">
                   An end-to-end operations platform for a medical shop. It brings point-of-sale billing, batch-wise
@@ -747,7 +860,7 @@
             </div>
           </article>
 
-          <!-- 04 · Fitness website -->
+          <!-- 05 · Fitness website -->
           <article class="project glass" data-tilt data-reveal>
             <a class="project__media" href="https://fitnesswebsit.netlify.app/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the Fitness Website Platform live site (opens in a new tab)">
               <div class="mock mock--fit" role="img" aria-label="Mockup of the Fitness Website Platform showing a bold hero banner and trainer profile cards">
@@ -765,7 +878,7 @@
               </div>
             </a>
             <div class="project__body">
-              <div class="project__meta"><span>04</span><span>Frontend · Netlify</span></div>
+              <div class="project__meta"><span>05</span><span>Frontend · Netlify</span></div>
               <h3 class="project__title">Fitness Website Platform</h3>
               <p class="project__desc">
                 A responsive fitness site with trainer profiles, membership plans, service listings, dynamic filtering,
@@ -780,7 +893,7 @@
             </div>
           </article>
 
-          <!-- 05 · Naruto image gallery -->
+          <!-- 06 · Naruto image gallery -->
           <article class="project glass" data-tilt data-reveal>
             <a class="project__media" href="https://ashofficial338-jpg.github.io/Naruto-Gird/" target="_blank" rel="noopener" data-cursor="view" aria-label="Open the Naruto Responsive Image Gallery live site (opens in a new tab)">
               <div class="mock mock--gallery" role="img" aria-label="Mockup of the Naruto responsive image gallery showing a masonry grid of colourful image tiles">
@@ -796,7 +909,7 @@
               </div>
             </a>
             <div class="project__body">
-              <div class="project__meta"><span>05</span><span>Frontend · GitHub Pages</span></div>
+              <div class="project__meta"><span>06</span><span>Frontend · GitHub Pages</span></div>
               <h3 class="project__title">Naruto Gallery — Responsive Image Grid</h3>
               <p class="project__desc">
                 A Naruto-themed responsive image gallery built on a Bootstrap grid, with refined hover effects,
@@ -885,7 +998,7 @@
 
         <div class="stats" data-reveal-stagger>
           <div class="stat glass">
-            <strong class="stat__num"><span data-count="5">0</span></strong>
+            <strong class="stat__num"><span data-count="6">0</span></strong>
             <span class="stat__label">Production apps deployed</span>
           </div>
           <div class="stat glass">
